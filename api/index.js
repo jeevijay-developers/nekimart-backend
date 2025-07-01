@@ -7,7 +7,7 @@ const { Server } = require("socket.io");
 const http = require("http");
 // const http = require("http");
 // const { Server } = require("socket.io");
-
+const vendorRoutes = require('../routes/vendorRoutes')
 const { connectDB } = require("../config/db");
 const productRoutes = require("../routes/productRoutes");
 const customerRoutes = require("../routes/customerRoutes");
@@ -88,7 +88,7 @@ app.use("/api/partners/", partnerRoutes);
 app.use("/api/tele/", telecallerRoutes);
 app.use("/api/rider/", bikeRideRoutes);
 app.use("/api/store/notification/", storeNotificationRoutes);
-
+app.use("/api/vendor",vendorRoutes)
 //if you not use admin dashboard then these two route will not needed.
 app.use("/api/admin/", adminRoutes);
 app.use("/api/orders/", orderRoutes);
