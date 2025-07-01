@@ -15,7 +15,7 @@ export const registerVendor = async (req, res) => {
       logoUrl,
       aadharCardUrl,
       panCardUrl,
-      cancelCheque,
+      cancelChequeUrl,
       bankAccNumber,
       IFSC,
       accountHolderName,
@@ -31,7 +31,7 @@ export const registerVendor = async (req, res) => {
       // !brandName ||
       // !aadharCardUrl ||
       // !panCardUrl ||
-      // !cancelCheque ||
+      // !cancelChequeUrl ||
       // !bankAccNumber ||
       // !IFSC ||
       // !accountHolderName ||
@@ -50,7 +50,7 @@ export const registerVendor = async (req, res) => {
       logoUrl,
       aadharCardUrl,
       panCardUrl,
-      cancelCheque,
+      cancelChequeUrl,
       bankAccNumber,
       IFSC,
       accountHolderName,

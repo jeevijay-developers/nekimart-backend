@@ -42,7 +42,7 @@ const Vendor = new mongoose.Schema(
       type: String,
       required: true,
     },
-    cancelCheque: {
+    cancelChequeUrl: {
       type: String,
       required: true,
     },
