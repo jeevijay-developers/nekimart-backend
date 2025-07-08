@@ -66,6 +66,10 @@ const Vendor = new mongoose.Schema(
       type: String,
       required: true,
     },
+    address: { type: String, required: true },
+    pincode: { type: Number, required: true },
+    aadharNumber:{type:Number,required:true},
+    panNumber:{type:Number, required:true},
     status: {
       type: String,
       enum: ["pending", "approved", "rejected"],
@@ -76,9 +80,6 @@ const Vendor = new mongoose.Schema(
       default: Date.now,
     },
   },
-  {
-    timestamps: true,
-  }
 );
 
 // If already compiled, use existing, else compile

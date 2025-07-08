@@ -21,6 +21,10 @@ export const registerVendor = async (req, res) => {
       accountHolderName,
       bankBranch,
       GSTNumber,
+      address,
+      pincode,
+      aadharNumber,
+      panNumber
     } = req.body;
 
     // Validate required fields
@@ -29,14 +33,18 @@ export const registerVendor = async (req, res) => {
       !email 
       // !mobile ||
       // !brandName ||
+      // !aadharNumber ||
       // !aadharCardUrl ||
+      // !panNumber ||
       // !panCardUrl ||
       // !cancelChequeUrl ||
       // !bankAccNumber ||
       // !IFSC ||
       // !accountHolderName ||
       // !bankBranch ||
-      // !GSTNumber
+      // !GSTNumber||
+      // !pincode||
+      // !aadharNumber
     ) {
       return res.status(400).json({ message: "Missing required fields." });
     }
@@ -56,6 +64,10 @@ export const registerVendor = async (req, res) => {
       accountHolderName,
       bankBranch,
       GSTNumber,
+      address,
+      pincode,
+      aadharNumber,
+      panNumber
     });
 
     return res.status(201).json({
