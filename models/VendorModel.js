@@ -69,7 +69,7 @@ const Vendor = new mongoose.Schema(
     address: { type: String, required: true },
     pincode: { type: Number, required: true },
     aadharNumber:{type:Number,required:true},
-    panNumber:{type:Number, required:true},
+    panNumber:{type:String, required:true},
     status: {
       type: String,
       enum: ["pending", "approved", "rejected"],
