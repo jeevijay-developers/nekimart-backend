@@ -80,5 +80,5 @@ const VendorSchema = new mongoose.Schema({
   },
 });
 
-// If already compiled, use existing, else compile
-module.exports =  mongoose.model("PartnerRegistration", VendorSchema);
+// If a model named "Vendor" already exists, use it. Otherwise, create a new one.
+module.exports = mongoose.model("Vendor", VendorSchema);
